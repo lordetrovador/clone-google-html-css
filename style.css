@@ -1,0 +1,90 @@
+/* Reset básico: remove margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o tamanho da caixa inclua a borda */
+    font-family: Arial, sans-serif; /* Fonte parecida com a do Google */
+}
+
+body {
+    display: flex; /* Transforma o corpo numa caixa flexível */
+    flex-direction: column; /* Organiza itens em coluna (um embaixo do outro) */
+    height: 80vh; /* Ocupa 100% da altura da tela */
+}
+
+/* --- CABEÇALHO --- */
+header {
+    display: flex;
+    justify-content: flex-start; /* Empurra o menu para a direita */
+    padding: 20px; /* Dá um respiro nas bordas */
+}
+
+nav a {
+    text-decoration: none; /* Tira o sublinhado do link */
+    color: #000;
+    margin-block: 10px; /* Espaço entre os links */
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* --- ÁREA PRINCIPAL --- */
+main {
+    flex: 1; /* Ocupa todo o espaço sobrando no meio */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no meio da tela */
+    justify-content: center; /* Centraliza na altura também (mais ou menos) */
+    margin-top: -50px; /* Um ajuste fino para subir um pouco visualmente */
+}
+
+.logo-area img {
+    width: 272px; /* Tamanho fixo do logo */
+    margin-bottom: 20px;
+}
+
+/* --- FORMULÁRIO E BOTÕES --- */
+input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    border-radius: 15px; /* Borda arredondada igual do Google */
+    border: 1px solid #dfe1e5;
+    outline: none; /* Tira a borda azul ao clicar */
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28); /* Sombra suave */
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+}
+
+input[type="submit"]:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding: 15px;
+    border-style: 50px solid hsl(0, 0%, 100%);
+    border-radius: 24px;
+    text-align: center; /* Centraliza texto simples */
+    font-size: 14px;
+    color: #70757a;
+}
