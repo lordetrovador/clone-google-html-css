@@ -1,90 +1,300 @@
-/* Reset básico: remove margens padrão do navegador */
-* {
+@font-face {
+    font-family: 'GoogleSans';
+    src: url(./GoogleSans.ttf) format('tff'),
+         url(./GoogleSans-Italic.ttf) format('tff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que o tamanho da caixa inclua a borda */
-    font-family: Arial, sans-serif; /* Fonte parecida com a do Google */
+    box-sizing: border-box;
+}   
+
+a{
+    font-family: GoogleSans, sans-serif;
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+    cursor: pointer;
 }
 
-body {
-    display: flex; /* Transforma o corpo numa caixa flexível */
-    flex-direction: column; /* Organiza itens em coluna (um embaixo do outro) */
-    height: 80vh; /* Ocupa 100% da altura da tela */
+a:hover{
+    text-decoration: underline;
 }
 
-/* --- CABEÇALHO --- */
-header {
+div {
+    display: block;
+}
+
+header{
     display: flex;
-    justify-content: flex-start; /* Empurra o menu para a direita */
-    padding: 20px; /* Dá um respiro nas bordas */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
 }
 
-nav a {
-    text-decoration: none; /* Tira o sublinhado do link */
-    color: #000;
-    margin-block: 10px; /* Espaço entre os links */
-    font-size: 13px;
+nav{
+    display: flex;
+    gap: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+h_int{
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
 }
 
-/* --- ÁREA PRINCIPAL --- */
-main {
-    flex: 1; /* Ocupa todo o espaço sobrando no meio */
+header a:hover{
+    text-decoration: underline;
+}
+
+.b-h{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mail-image{
+    max-width: none;
+    display: flex;
+    align-items: center;
+}
+
+.email, .imagens{
+    padding-left: 15px;
+    line-height: normal;
+    padding: 4px 6px;
+}
+
+.quadradoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.quadradoc:hover{
+    background-color: #f0f0f0;
+}
+
+.quadrado img{
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.quadrado img:hover{
+    opacity: 1;
+}
+
+body{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza tudo no meio da tela */
-    justify-content: center; /* Centraliza na altura também (mais ou menos) */
-    margin-top: -50px; /* Um ajuste fino para subir um pouco visualmente */
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
-.logo-area img {
-    width: 272px; /* Tamanho fixo do logo */
-    margin-bottom: 20px;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* --- FORMULÁRIO E BOTÕES --- */
-input[type="text"] {
-    width: 500px;
-    padding: 10px;
-    border-radius: 15px; /* Borda arredondada igual do Google */
-    border: 1px solid #dfe1e5;
-    outline: none; /* Tira a borda azul ao clicar */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 380px;
 }
 
-input[type="text"]:hover {
-    box-shadow: 0 1px 6px rgba(32,33,36,0.28); /* Sombra suave */
+.img_logo{
+    max-height: auto;
+    max-width: 470px;
+    object-fit: contain;
+    width: auto;
 }
 
-.botoes {
-    margin-top: 20px;
+.search-box{
+    width: 686px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 14px;
+    border: 1px;
+    z-index: 3;
+    position: relative;
+    min-height: 50px;
+    background: #fff;
+    border: 1px solid #dadce0;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+    border-radius: 26px;
+    margin: 0 auto;
 }
 
-input[type="submit"] {
+.search-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.img-search{
+    height: 20px;
+    width: auto;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+.mic{
+    height: 20px;
+    width: auto;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+.keyboard{
+    height: 20px;
+    width: auto;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+.lupa{
+    height: 15px;
+    width: auto;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.b1{
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
-    padding: 8px 16px;
-    margin: 0 5px;
-    border-radius: 4px;
+    border-radius: 8px;
     color: #3c4043;
-    cursor: pointer; /* Mãozinha ao passar o mouse */
-}
-
-input[type="submit"]:hover {
-    border: 1px solid #dadce0;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-}
-
-/* --- RODAPÉ --- */
-footer {
-    background-color: #f2f2f2;
-    margin-top: 50px;
-    padding: 15px;
-    border-style: 50px solid hsl(0, 0%, 100%);
-    border-radius: 24px;
-    text-align: center; /* Centraliza texto simples */
+    font-family: Google Sans, Arial, sans-serif;
+    font-optical-sizing: none;
     font-size: 14px;
-    color: #70757a;
+    font-weight: 500;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+
+.b2{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 8px;
+    color: #3c4043;
+    font-family: Google Sans, Arial, sans-serif;
+    font-optical-sizing: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.b1:hover, .b2:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1); /* Sombra mais sutil */
+    border: 1px solid #c6c6c6; /* Adiciona uma borda leve */
+}
+
+center{
+    display: flex;
+    text-align: center;
+    gap: 7px;
+}
+
+.white-space{
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.space-logo{
+    padding: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-box{
+}
+
+.ft1{
+    padding: 15px 25px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ft2{
+    font-size: 15px;
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ft2-1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ft2-2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sobre, .publicidade, .negocios, .privacidade, .termos, .configuracoes{
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
 }
