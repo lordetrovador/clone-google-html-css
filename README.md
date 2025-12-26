@@ -8,6 +8,13 @@ Este projeto foi proposto inicialmente por [@edwardribas](https://github.com/edw
 
 ---
 
+## 🔗 Demonstração
+
+Você pode visualizar o projeto online através do link abaixo:
+👉 **[Acesse o Google 2 aqui](https://lordetrovador.github.io/clone-google-html-css/)**
+
+---
+
 ## 🚀 O Processo de Desenvolvimento
 
 O caminho até o resultado final foi um processo de refinamento contínuo e aprendizado prático:
@@ -24,9 +31,9 @@ O caminho até o resultado final foi um processo de refinamento contínuo e apre
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5** (Estruturação Semântica)
-* **CSS3** (Flexbox & Variáveis)
-* **Clean Code** (Foco em legibilidade e organização)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Clean Code](https://img.shields.io/badge/Clean%20Code-Pro-brightgreen?style=for-the-badge)
 
 ---
 
@@ -34,13 +41,13 @@ O caminho até o resultado final foi um processo de refinamento contínuo e apre
 
 # Google 2 — Homepage Clone
 
-**Google 2** is a study project that replicates the Google homepage interface. The main goal was to consolidate front-end web development fundamentals, focusing on semantics, code organization, and responsive design.
+**Google 2** is a study project that replicates the Google homepage interface. The main goal was to consolidate front-end web development fundamentals.
 
-Originally proposed by [@edwardribas](https://github.com/edwardribas).
+### 🔗 Live Demo
+👉 **[View Project Online](https://lordetrovador.github.io/clone-google-html-css/)**
 
 ### 🚀 Development Insights
-
-* **Refactoring:** It took 3 full iterations to reach the final clean structure, moving away from "div soup" to semantic HTML.
+* **Refactoring:** It took 3 full iterations to reach the final clean structure.
 * **CSS Mastery:** First deep dive into Flexbox, CSS Variables, and Responsive Design.
 
 ### 🛠️ Tech Stack
